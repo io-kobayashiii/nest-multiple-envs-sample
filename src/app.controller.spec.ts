@@ -20,8 +20,8 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "test.env"', () => {
-      expect(appController.getEnvFileName()).toBe('test.env');
+    it('should return "ENV_FILE_NAME: test.env"', () => {
+      expect(appController.getEnvFileName()).toBe('ENV_FILE_NAME: test.env');
     });
   });
 });
